@@ -14,7 +14,7 @@ Merges (left Join) the result fields from the following artic & ncov-tools qc su
 *.qc.csv (artic qc summary)
 
 
-Example of output:
+Example of output (click to open in new window and enlarge):
 
 ![image](https://user-images.githubusercontent.com/72042148/109368160-0b294100-784d-11eb-98ec-7ec25b0cfcc3.png)
 
