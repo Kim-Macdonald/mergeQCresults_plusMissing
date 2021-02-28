@@ -31,7 +31,7 @@ Assumed Directory Structure:
 
 cd to directory with result files
 
-    (for BCCDC: cd path/to/AnalysisDirectory/[MiSeqRunID] )
+    (for BC: cd path/to/AnalysisDirectory/[MiSeqRunID] )
 
     conda activate pandas
 
