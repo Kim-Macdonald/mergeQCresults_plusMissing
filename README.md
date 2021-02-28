@@ -31,7 +31,7 @@ Assumed Directory Structure:
 
 cd to directory with result files
 
-    (for BCCDC: cd projects/covid-19_production/analysis_by_run/[MiSeqRunID] )
+    (for BCCDC: cd path/to/AnalysisDirectory/[MiSeqRunID] )
 
     conda activate pandas
 
@@ -43,7 +43,7 @@ To run/loop through all MiSeqRunID directories:
 
     conda activate pandas
 
-    (For BC:) cd projects/covid-19_production/analysis_by_run/
+    (For BC:) cd path/to/AnalysisDirectory/
 
-    for dir in /projects/covid-19_production/analysis_by_run/*/; do cd $dir; python3 /path/to/script/mergeQCresults_PlusMissing.py;  cd ..; done
+    for dir in /path/to/AnalysisDirectory/*/; do cd $dir; python3 /path/to/script/mergeQCresults_PlusMissing.py;  cd ..; done
 
