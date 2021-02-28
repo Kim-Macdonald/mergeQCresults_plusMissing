@@ -46,4 +46,6 @@ To run/loop through all MiSeqRunID directories:
     (For BC:) cd path/to/AnalysisDirectory/
 
     for dir in /path/to/AnalysisDirectory/*/; do cd $dir; python3 /path/to/script/mergeQCresults_PlusMissing.py;  cd ..; done
+    
+    conda deactivate
 
