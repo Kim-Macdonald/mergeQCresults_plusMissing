@@ -19,7 +19,7 @@ Example of output (click to open in new window and enlarge):
 ![image](https://user-images.githubusercontent.com/72042148/109368160-0b294100-784d-11eb-98ec-7ec25b0cfcc3.png)
 
 
-Assumed Directory Structure:
+#Assumed Directory Structure:
 
 ![Github_AssumedDirectoryStructure_paint2](https://user-images.githubusercontent.com/72042148/109408125-62a5da80-793b-11eb-961c-f653341a92f3.png)
 
