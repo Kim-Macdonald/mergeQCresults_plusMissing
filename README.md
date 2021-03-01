@@ -18,13 +18,13 @@ Merges (left Join) the result fields from the following artic & ncov-tools qc su
 
 ## Example of output (click to open in new window and enlarge):
 
-![Github_AssumedDirectoryStructure_paint4](https://user-images.githubusercontent.com/72042148/109568432-c6471980-7a9b-11eb-928f-19019ad8ef31.png)
+![GithubMergedTablePic4_paint](https://user-images.githubusercontent.com/72042148/109568525-e676d880-7a9b-11eb-8a7c-c830b917622b.png)
 
 
 
 ## Assumed Directory Structure:
 
-![Github_AssumedDirectoryStructure_paint3](https://user-images.githubusercontent.com/72042148/109567783-c1ce3100-7a9a-11eb-9190-918b0373c893.png)
+![Github_AssumedDirectoryStructure_paint4](https://user-images.githubusercontent.com/72042148/109568432-c6471980-7a9b-11eb-928f-19019ad8ef31.png)
 
 
 
