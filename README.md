@@ -29,7 +29,9 @@ Merges (left Join) the result fields from the following artic & ncov-tools qc su
 
 # To Run:
 
-1st set up environment with pandas (done on sabin already)
+1st set up environment with pandas, and any other dependencies (done on sabin already)
+
+      conda create -n pandas pandas 
 
 cd to directory with result files
 
