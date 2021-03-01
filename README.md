@@ -25,7 +25,7 @@ Merges (left Join) the result fields from the following artic & ncov-tools qc su
 
 
 
-(#To-Run:)
+(#to-Run:)
 
 1st set up environment with pandas (done on sabin already)
 
