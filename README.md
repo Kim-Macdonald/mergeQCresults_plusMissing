@@ -23,7 +23,8 @@ Merges (left Join) the result fields from the following artic & ncov-tools qc su
 
 ## Assumed Directory Structure:
 
-![Github_AssumedDirectoryStructure_paint2](https://user-images.githubusercontent.com/72042148/109408125-62a5da80-793b-11eb-961c-f653341a92f3.png)
+![Github_AssumedDirectoryStructure_paint3](https://user-images.githubusercontent.com/72042148/109567783-c1ce3100-7a9a-11eb-9190-918b0373c893.png)
+
 
 
 
