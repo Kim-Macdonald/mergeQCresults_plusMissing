@@ -1,6 +1,8 @@
 # mergeQCresults_plusMissing
 
 ## Description
+Replaces the need to use merge_ncov_qc_results and MergeQCResultsWithRemovedSamples separately. Use this instead. 
+
 Combines results from artic, ncovtools, pangolin, and ncov-watch into 1 table, and adds any samples removed (no consensus made) to the end (.append)
 
 Use this one script instead of merge_ncov_qc_results and MergeQCResultsWithRemovedSamples together. 
