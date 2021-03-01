@@ -5,7 +5,6 @@ Replaces the need to use merge_ncov_qc_results and MergeQCResultsWithRemovedSamp
 
 Combines results from artic, ncovtools, pangolin, and ncov-watch into 1 table, and adds any samples removed (no consensus made) to the end (.append)
 
-Use this one script instead of merge_ncov_qc_results and MergeQCResultsWithRemovedSamples together. 
 
 Merges (left Join) the result fields from the following artic & ncov-tools qc summaries, pangolin, and ncov-watch into 1 csv file. Does the same for the missing samples (in fastq files but not consensus files) and appends them to the bottom. 
 
