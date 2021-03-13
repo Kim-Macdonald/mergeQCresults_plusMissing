@@ -22,6 +22,8 @@ Merges (left Join) the result fields from the following artic & ncov-tools qc su
 ![GithubMergedTablePic4_paint](https://user-images.githubusercontent.com/72042148/109568525-e676d880-7a9b-11eb-8a7c-c830b917622b.png)
 
 
+Note: sometimes the the 2nd last column (qc_pass_y) of the output file has values of 1 and 0 instead of TRUE and FALSE. They should still sort the same, but if you need the TRUE/FALSE values and not 1/0, then you may want to edit the script. I haven't looked into the cause yet. 
+
 
 ## Assumed Directory Structure:
 
