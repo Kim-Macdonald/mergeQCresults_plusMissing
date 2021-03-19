@@ -34,6 +34,8 @@ Note: sometimes the the 2nd last column (qc_pass_y) of the output file has value
 
 # To Run:
 
+We use the following pipelines to produce results used below: BCCDC-PHL/ncov2019-artic-nf (forked from connor-lab/ncov2019-artic-nf) and BCCDC-PHL/ncov-tools (forked from jts/ncov-tools)
+
 1st set up environment with pandas, and any other dependencies (done on sabin already)
 
       conda create -n pandas pandas 
