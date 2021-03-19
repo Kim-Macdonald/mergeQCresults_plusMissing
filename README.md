@@ -16,6 +16,8 @@ Merges (left Join) the result fields from the following artic & ncov-tools qc su
 
     *.qc.csv (artic qc summary)
 
+We use the following pipelines to produce the result files shown above: BCCDC-PHL/ncov2019-artic-nf (forked from connor-lab/ncov2019-artic-nf) and BCCDC-PHL/ncov-tools (forked from jts/ncov-tools)
+
 
 ## Example of output (click to open in new window and enlarge):
 
@@ -33,8 +35,6 @@ Note: sometimes the the 2nd last column (qc_pass_y) of the output file has value
 
 
 # To Run:
-
-We use the following pipelines to produce results used below: BCCDC-PHL/ncov2019-artic-nf (forked from connor-lab/ncov2019-artic-nf) and BCCDC-PHL/ncov-tools (forked from jts/ncov-tools)
 
 1st set up environment with pandas, and any other dependencies (done on sabin already)
 
