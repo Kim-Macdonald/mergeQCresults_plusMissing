@@ -4,6 +4,15 @@ Created on Thu Feb 11 23:52:48 2021
 
 @author: KimMacdonald
 """
+
+#created & tested on PC using:
+# pandas v1.1.3
+# python v3.8.5
+#and on laptop with:
+# pandas v1.0.5
+# python v3.8.3
+#Server has pandas v1.2.3 and python v3.8.8 (some conditions don't seem to work on server for VoC calls that work on PC)
+
 #import packages I need
 import os
 import subprocess
