@@ -2,15 +2,13 @@
 """
 Created on Thu Feb 11 23:52:48 2021
 
-@author: KMacDo
+@author: KimMacdonald
 """
 #import packages I need
 import os
 import subprocess
 import fnmatch
 import pandas as pd
-#If you need to change a directory, you can do it this way (but you don't here):
-#os.chdir('C:/Users/KMacDo/Desktop/PythonTest')
 
 #save the current working directory (cwd) to a variable to use in everything below. 
 #For us, this would be the MiSeqRunID directory for each run - it changes each time we analyze a run, 
@@ -75,10 +73,8 @@ df_ConsensusList = pd.read_table("ConsensusList.txt", header=None)
 
 
 #Extract sampleIDs that are in FastqList but NOT in ConsensusList:
-#df_FastqDiffs = df_ConsensusList[df_ConsensusList.isin(df_FastqList)].dropna(how = 'all')
 df_FastqDiffs1 = df_FastqList.loc[~df_FastqList[0].isin(df_ConsensusList[0])].copy()
 #print(df_FastqDiffs1)
-#df3 = df1.loc[~df1['ID'].isin(df2['ID'])].copy()
 
 
 #Add column headers to match the other file:
@@ -90,7 +86,6 @@ df_FastqDiffs3 = df_FastqDiffs2.rename(columns={0: "sample"})
 #print(df_FastqDiffs3)
 
 #replace 0's in qc_pass_y column with FALSE:
-#df_FastqDiffs = pd.df_FastqDiffs3
 df_FastqDiffs4 = df_FastqDiffs3[['qc_pass_y']].replace(0,'FALSE')
 df_FastqDiffs4b = df_FastqDiffs3[['run_name']].replace(0, MiSeqRunID)
 #print(df_FastqDiffs4b) #worked
@@ -115,7 +110,7 @@ df_FastqDiffs5 = df_FastqDiffs5.reset_index().rename(columns={'sample': 'sample_
 #print(df_FastqDiffs5)
 #df.loc[df['A'].isnull(), 'A'] = df['B']
 #check content:
-#df_FastqDiffs5.to_csv('df_FastqDiffs5.csv') #has a header ('sample'), just doesn't show in preview for whatever reason
+#df_FastqDiffs5.to_csv('df_FastqDiffs5.csv') #has a header ('sample'), just doesn't show in Spyder preview for whatever reason
 
 #merge df_FastqDiffs5 with df_FastqDiffs4_merge5
 df_FastqDiffs3_4_5_merge2 = pd.merge(df_FastqDiffs4_merge5.iloc[:, 0:29], df_FastqDiffs5.iloc[:, 1:2], how='left', left_on='sample', right_on='sample_name')
@@ -176,7 +171,6 @@ for dir_path, dir_names, file_names in os.walk(os.path.join(cwdPath, file3Path))
             df_lineage = pd.read_csv(file3) #, names = ['taxon', 'lineage', 'probability', 'pangoLEARN_version', 'status', 'note'])
             pd.set_option('display.max_columns', None)
             #print(df_lineage)
-            #df_lineage_split = pd.DataFrame(df_lineage.str.split('_').tolist(), columns = ['text', 'taxon']) #nope
             df_lineage_split = df_lineage['taxon'].str.replace('Consensus_', '')
             #print(df_lineage_split)
             df_lineage_combo1 =  [df_lineage_split, df_lineage.iloc[:, 1:6]]
@@ -244,7 +238,7 @@ df_artic6 = df_ncov_variant_lineage_artic_merge.iloc[:, 29:30]
 
 #CONCATENATE above dfs IN DESIRED ORDER:
 #df_ncov_variant_lineage_artic_merge2 = [df_ncov1, df_variant1, df_variant2.TotalMutations.astype(str), df_lineage1, df_lineage2, df_artic5, df_artic6]
-#TotalMutations column (e.g. 16/17) opens in excel as date for some, so remove this column (no way to fix here), and just make the column in dashboard instead. 
+#TotalMutations column (e.g. 16/17) opens in excel as date for some, so remove this column (no way to fix here, unless add a ' in front of it), and just make the column in dashboard instead. 
 df_ncov_variant_lineage_artic_merge2 = [df_ncov1, df_variant1, df_lineage1, df_lineage2, df_artic5, df_artic6]
 df_ncov_variant_lineage_artic_merge3 = pd.concat(df_ncov_variant_lineage_artic_merge2, axis=1)
 #print(df_ncov_variant_lineage_artic_merge3)
@@ -264,7 +258,6 @@ df_ncovtoolsSummary_plusMissing = df_ncov_variant_lineage_artic_merge3.append(df
 
 #save final2 file as csv (easier to open in Excel than tsv):
 #(this has only the columns I want to link my dashboard to, for various people's purposes)
-#df_ncov_variant_lineage_artic_merge3.to_csv(MiSeqRunID + '_' + 'QC_lineage_VoC_OrderedFinal.csv')
 df_ncovtoolsSummary_plusMissing.to_csv(MiSeqRunID + '_' + 'MissingPlus_QC_lineage_VoC_OrderedFinal.csv')
 
 
