@@ -275,5 +275,4 @@ bashCommand3 = "rm FastqList.txt; rm ConsensusList.txt"
 subprocess.run(bashCommand3, shell=True, check=True)
 #subprocess.run(bashCommand4, shell=True, check=True)
 
-
                     
